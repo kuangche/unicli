@@ -27,6 +27,7 @@
   },
   "husky": {
     "hooks": {
+      "pre-commit": "eslint --ext .vue src/",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
