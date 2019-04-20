@@ -22,7 +22,7 @@ export default {
   },
   data() {
     return {
-      date: '2019-03-12',
+      date: '2019-03-11',
     };
   },
   methods: {
