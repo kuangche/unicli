@@ -22,12 +22,11 @@ export default {
   },
   data() {
     return {
-      date: '2019-03-10',
+      date: '2019-03-11',
     };
   },
   methods: {
     change(e) {
-      const data= 232
       console.log(e);
     },
     toClick(e) {
