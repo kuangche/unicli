@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "commitmsg": "commitlint -E HUSKY_GIT_PARAMS",
     "serve": "npm run dev:h5",
     "build": "npm run build:h5",
     "lint": "vue-cli-service lint",
@@ -24,6 +23,11 @@
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "dependencies": {
