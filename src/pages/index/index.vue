@@ -23,14 +23,15 @@ export default {
   data() {
     return {
       date: '2019-03-15',
+      myDate: ''
     };
   },
   methods: {
     change(e) {
-      console.log(e);
+      this.myDate = e.fulldate
     },
     toClick(e) {
-      console.log(e);
+      this.myDate = e.fulldate
     },
   },
 };
