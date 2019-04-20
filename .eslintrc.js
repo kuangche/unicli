@@ -74,11 +74,6 @@ module.exports = {
     'prefer-const': 'error',
     // 关闭强制在花括号内使用一致的换行符
     'object-curly-newline': 'off',
-    // js、vue通过import方式引入 不需要添加后缀名
-    'import/extensions': ['error', 'always', {
-      js: 'never',
-      vue: 'never'
-    }],
     // 禁止对 function 的参数进行重新赋值
     'no-param-reassign': ['error', {
       props: true,
@@ -87,11 +82,7 @@ module.exports = {
         'acc', // for reduce accumulators
         'e' // for e.returnvalue
       ]
-    }],
-    // allow optionalDependencies
-    'import/no-extraneous-dependencies': ['error', {
-      optionalDependencies: ['test/unit/router.js']
-    }],
+    }]
   },
   parserOptions: {
     parser: 'babel-eslint',
